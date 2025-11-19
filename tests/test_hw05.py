@@ -1,5 +1,9 @@
 import pytest
-from hw05.main import parse_grid, grid_shortest_path
+import sys
+import os
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from main import parse_grid, grid_shortest_path
 
 def test_parse_finds_start_and_target():
     lines = [
